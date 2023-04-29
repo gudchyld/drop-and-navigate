@@ -12,68 +12,105 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    
+
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="style.css" />
     <title>Snap</title>
   </head>
   <body>
     <!-- main content goes here -->
-    <header> 
-      <div class="primary-nav">
-        <img src="images/logo.svg"/>
-          <nav>
-            
-            <div>  <!-- The rest of the nav  -->  </div>
-
-            <div>
-                <button class="nav-btn">Login</button>
-                <button class="nav-btn">Register</button>
+    <header>
+      <div class="nav-container">
+        <img src="images/logo.svg" />
+        <nav class="nav-main">
+          <!-- Navigations - 01-->
+          <div class="nav-navigation">
+            <!-- Features -->
+            <div class="dropdown">
+              <button class="drop-btn arrow">Features</button>
+              <div class="dropdown-content">
+                <a href="">Todo List</a>
+                <a href="">Calendar</a>
+                <a href="">Reminders</a>
+                <a href="">Planning</a>
+              </div>
             </div>
-         </nav>
+            <!-- Company -->
+            <div class="dropdown">
+              <button class="drop-btn arrow">Company</button>
+              <div class="dropdown-content">
+                <a href="">History</a>
+                <a href="">Our Team</a>
+                <a href="">Blog</a>
+              </div>
+            </div>
+            <!-- Careers -->
+            <div>
+              <button class="drop-btn">Careers</button>
+            </div>
+            <!-- About -->
+            <div>
+              <button class="drop-btn">About</button>
+            </div>
+          </div>
+          <!-- Navigation End-->
+
+          <!-- Righ Aligned Navigation-02 (Login and Register) -->
+          <div class="nav-right">
+            <button class="nav-btn">Login</button>
+            <button class="nav-btn">Register</button>
+          </div>
+        </nav>
       </div>
     </header>
 
+    <!-- Main Section -->
     <main>
-      <div class="container">
-          <picture class="hero-image order">
-            <source srcset="images/image-hero-desktop.png" media="(min-width: 768px)" />
-            <img class="mobile-img" src="images/image-hero-mobile.png" alt="hero image"/>
-          </picture>
-    
+      <div class="main-container">
+        <picture class="hero-image order">
+          <source
+            srcset="images/image-hero-desktop.png"
+            media="(min-width: 768px)"
+          />
+          <img
+            class="mobile-img"
+            src="images/image-hero-mobile.png"
+            alt="hero image"
+          />
+        </picture>
 
         <div class="main-content">
           <h1>Make remote work</h1>
-          <p>Get your team in sync, no matter your location.Streamline processes, create team rituals and watch productivity grow.</p>
+          <p>
+            Get your team in sync, no matter your location.Streamline processes,
+            create team rituals and watch productivity grow.
+          </p>
           <button class="learn-btn">Learn more</button>
 
           <div class="images-container">
-
             <div class="image-one">
-              <img src="images/client-databiz.svg"/>
+              <img src="images/client-databiz.svg" />
             </div>
-            
 
             <div class="image-two">
-              <img src="images/client-audiophile.svg"/>
+              <img src="images/client-audiophile.svg" />
             </div>
 
             <div class="image-three">
-              <img src="images/client-maker.svg"/>
+              <img src="images/client-maker.svg" />
             </div>
-            
+
             <div class="image-four">
-              <img src="images/client-meet.svg"/>
+              <img src="images/client-meet.svg" />
             </div>
           </div>
-
         </div>
-
-        
       </div>
     </main>
-    
   </body>
 </html>
