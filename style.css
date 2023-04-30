@@ -71,26 +71,44 @@ header {
   font-weight: 500;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  z-index: 1;
-}
-
-.show {
-  display: block;
-}
 
 .dropdown {
   position: relative;
 }
 .dropdown:hover .dropdown-content {
   display: block;
+  transition: 0.3s;
 }
 
-/* .arrow{
-    display: inline-block;
-} */
+.dropdown-content {
+  display: none;
+  position: absolute;  
+  z-index: 1;
+  border: 2px solid black;
+  margin-top: 10px;
+  margin-right: 8px;
+  padding: 8px 10px;
+  transition: 0.2s;
+}
+.left-drop{
+    right: -30px;
+}
+
+.show {
+  display: block;
+}
+
+.dropdown-content a {
+  color: black;
+
+  padding: 5px 0px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.812rem;
+  width: 100px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
 
 .arrow::after {
   content: "";
@@ -102,8 +120,50 @@ header {
   top: 8px;
   margin-left: 5px;
 }
- .arrow:hover::after {
+.arrow:hover::after {
   background: url("/images/icon-arrow-up.svg") no-repeat;
+  transition: 0.2s;
+}
+
+
+
+.dropdown-holder {
+  position: relative;
+  padding: 8px 10px;
+}
+
+/* dropdown content icons */
+.nav-icon::before {
+  content: "";
+  background: no-repeat;
+  background-size: contain;
+  display: block;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  right: 100px;
+  margin-left: 10px;
+}
+
+.nav-todo::before {
+  background: url("/images/icon-todo.svg") no-repeat;
+  background-position: center;
+}
+
+.nav-calendar::before {
+  background: url("/images/icon-calendar.svg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.nav-reminder::before {
+  background: url("/images/icon-reminders.svg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.nav-planning::before {
+  background: url("/images/icon-planning.svg") no-repeat;
+  background-size: cover;
 }
 
 /* TYPOGRAPHY */
